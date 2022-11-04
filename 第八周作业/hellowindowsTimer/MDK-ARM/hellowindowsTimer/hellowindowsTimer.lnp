@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"hellowindowstimer\startup_stm32f103xb.o"
+"hellowindowstimer\main.o"
+"hellowindowstimer\gpio.o"
+"hellowindowstimer\tim.o"
+"hellowindowstimer\usart.o"
+"hellowindowstimer\stm32f1xx_it.o"
+"hellowindowstimer\stm32f1xx_hal_msp.o"
+"hellowindowstimer\stm32f1xx_hal_gpio_ex.o"
+"hellowindowstimer\stm32f1xx_hal_tim.o"
+"hellowindowstimer\stm32f1xx_hal_tim_ex.o"
+"hellowindowstimer\stm32f1xx_hal.o"
+"hellowindowstimer\stm32f1xx_hal_rcc.o"
+"hellowindowstimer\stm32f1xx_hal_rcc_ex.o"
+"hellowindowstimer\stm32f1xx_hal_gpio.o"
+"hellowindowstimer\stm32f1xx_hal_dma.o"
+"hellowindowstimer\stm32f1xx_hal_cortex.o"
+"hellowindowstimer\stm32f1xx_hal_pwr.o"
+"hellowindowstimer\stm32f1xx_hal_flash.o"
+"hellowindowstimer\stm32f1xx_hal_flash_ex.o"
+"hellowindowstimer\stm32f1xx_hal_exti.o"
+"hellowindowstimer\stm32f1xx_hal_uart.o"
+"hellowindowstimer\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "hellowindowsTimer\hellowindowsTimer.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hellowindowsTimer.map" -o hellowindowsTimer\hellowindowsTimer.axf
